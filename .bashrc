@@ -5,8 +5,9 @@
 BOLD="\[\033[1m\]"
 RED="\[\033[0;31m\]"
 GREEN="\[\033[0;32m\]"
-BLUE="\[\033[0;34m\]"
 STEELBLUE="\[\033[38;5;81m\]"
+BLUE="\[\033[0;34m\]"
+YELLOW="\[\033[0;93m\]"
 OFF="\[\033[m\]"
 # COLORS | END
 
@@ -55,9 +56,9 @@ set_bash_prompt () {
 
     if [ "${EXITSTATUS}" -eq 0 ]
     then
-        PS1="${PROMPT} [${GREEN}${EXITSTATUS}${RED}]${OFF} ${BRANCH}$ "
+        PS1="${PROMPT} [${GREEN}${EXITSTATUS}${RED}]${OFF} ${YELLOW}${BRANCH}${OFF}$ "
     else
-        PS1="${PROMPT} [${BOLD}${EXITSTATUS}${RED}]${OFF} ${BRANCH}$ "
+        PS1="${PROMPT} [${BOLD}${EXITSTATUS}${RED}]${OFF} ${YELLOW}${BRANCH}${OFF}$ "
     fi
 
     PS2="${BOLD}>${OFF} "
