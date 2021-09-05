@@ -71,6 +71,7 @@ PROMPT_COMMAND=set_bash_prompt
 
 # GIT ALIASES | BEGIN
 alias gc="git commit -m"
+alias go="git checkout"
 alias gp="git pull"
 alias gs="git status"
 alias gpush="git push"
