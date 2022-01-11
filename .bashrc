@@ -79,6 +79,9 @@ alias ga="git add ."
 alias gA="git add -A"
 # GIT ALIASES | END
 
+# kubernetes alias
+alias k="kubectl"
+
 # PRINT PUBLIC IP ADDRESS TO CONSOLE | BEGIN
 alias myip="curl http://ipecho.net/plain; echo"
 # PRINT PUBLIC IP ADDRESS TO CONSOLE | END
